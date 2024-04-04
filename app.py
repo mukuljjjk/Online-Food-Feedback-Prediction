@@ -13,6 +13,10 @@ model = joblib.load("model.pkl")
 def form():
     return render_template("predict.html")
 
+@app.route("/backend")
+def backend():
+    return render_template("backend.html")
+
 
 # Handle form submission and provide prediction
 @app.route("/predict", methods=["POST"])
