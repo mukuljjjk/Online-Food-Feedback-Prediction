@@ -13,7 +13,7 @@ def form():
     return render_template("predict.html")
 
 @app.route("/predict")
-def predict():
+def predicts():
     return render_template("predict.html")
 
 @app.route("/backend")
