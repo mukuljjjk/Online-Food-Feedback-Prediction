@@ -16,7 +16,10 @@ def form():
 @app.route("/backend")
 def backend():
     return render_template("backend.html")
-
+    
+@app.route("/Datasets")
+def Datasets():
+    return render_template("Datasets.html")
 
 # Handle form submission and provide prediction
 @app.route("/predict", methods=["POST"])
